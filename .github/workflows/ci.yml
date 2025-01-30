@@ -1,21 +1,42 @@
-name: API workflow
+name: Python project
 
-on: [push, pull_request]
+on: 
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+permissions:
+  contents: read
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    name: Test python API
+  test:
+
+    runs-on: windows-latest
+
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-python@v2
+    - name: Checkout repository
+        uses: actions/checkout@v4
+
+    - name: Set Up Python    
+        uses: actions/setup-python@v3
       with:
         python-version: '3.10'
-    - name: Install requirements
-      run: pip install -r MyAdventures/requirements.txt
-    - name: Run tests and collect coverage
-      run: pytest --cov=MyAdventures --cov-report=xml
+
+    - name: Install dependencies
+       run: | 
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt || echo "Didn't found requeriments.txt"
+          pip install pytest pytest-cov
+
+    - name: Run tests and with pytest
+       run: pytest --cov=MyAdventures --cov-branch --cov-report=xml --cov-report=term
+
+    - name: Generate Coverage
+       run: |
+          pytest --cov-branch --cov-report=xml
+
     - name: Upload coverage reports to Codecov with GitHub Action
       uses: codecov/codecov-action@v5
-      env:
-        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
