@@ -21,8 +21,9 @@ jobs:
 
       - name: Run tests
         run: pytest --cov=AdventuresInMinecraft.MyAdventures --cov-report=xml
-
+        
       - name: Upload results to Codecov
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+          slug: Alexxx245/TAP-Framework-Task
