@@ -1,19 +1,29 @@
-name: Python project
+name: Minecraft Framework Project
 
-on: [push, pull_request]
+on: 
+  push
 
 jobs:
-  build:
+  test:
+    name: Run tests and collect coverage
     runs-on: ubuntu-latest
-    name: Test python API
     steps:
-    - uses: actions/checkout@v4
-    - name: Install requirements
-      run: pip install pytest pytest-cov
-    - name: Run tests and collect coverage
-      run: pytest --cov-branch --cov-report=xml
-    - name: Upload coverage reports to Codecov
-      uses: codecov/codecov-action@v5
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        slug: Alexxx245/TAP-Framework-Task
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+
+      - name: Install dependencies
+        run: pip install pytest pytest-cov
+
+      - name: Run tests
+        run: pytest --cov-branch --cov-report=xml
+
+      - name: Upload results to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          slug: Alexxx245/TAP-Framework-Task
