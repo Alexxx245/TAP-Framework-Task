@@ -20,13 +20,9 @@ jobs:
         run: pip install pytest pytest-cov
 
       - name: Run tests
-        run: pytest --cov-branch --cov-report=xml
-
-      - name: List files for debugging
-        run: ls -la
+        run: pytest --cov=AdventuresInMinecraft.MyAdventures --cov-report=xml
 
       - name: Upload results to Codecov
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          slug: Alexxx245/TAP-Framework-Task
