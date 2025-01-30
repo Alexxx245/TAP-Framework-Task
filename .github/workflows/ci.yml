@@ -11,11 +11,11 @@ jobs:
         with:
           python-version: '3.10'
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install pytest pytest-cov
       - name: Run tests and collect coverage
         run: pytest --cov MyAdventures/
-      - name: Upload coverage to Codecov (arg token)
-        uses: codecov/codecov-action@main
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@master
         with:
           fail_ci_if_error: true
           token: ${{ secrets.CODECOV_TOKEN }}
