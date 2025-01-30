@@ -22,10 +22,14 @@ jobs:
         run: pip install pytest pytest-cov
 
       - name: Run tests
-        run: pytest --cov=MyAdventures --cov-report=xml
+        run: pytest --cov=MyAdventures --cov-report=xml --capture=tee-sys -vvv -x
 
-      - name: List files (debugging)
-        run: ls -la 
+      - name: Check coverage file
+        run: |
+          if [ ! -f coverage.xml ]; then
+            echo "coverage.xml no encontrado, revisa pytest"
+            exit 1
+          fi
 
       - name: Upload results to Codecov
         uses: codecov/codecov-action@v5
