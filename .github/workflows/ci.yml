@@ -22,7 +22,7 @@ jobs:
         run: pip install pytest pytest-cov
 
       - name: Run tests
-        run: pytest --cov=MyAdventures --cov-report=xml --maxfail=5 --timeout=60
+        run: pytest --cov=MyAdventures --cov-report=xml
 
       - name: List files (debugging)
         run: ls -la 
