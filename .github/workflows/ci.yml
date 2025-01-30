@@ -1,29 +1,22 @@
-name: Run tests and upload coverage
-
-on: 
-  push
-
+name: Workflow for Codecov example-python
+on: [push, pull_request]
 jobs:
-  test:
-    name: Run tests and collect coverage
+  run:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Set up Python
+      - name: Set up Python 3.10
         uses: actions/setup-python@v4
-
-      - name: Install dependencies
-        run: pip install pytest pytest-cov
-
-      - name: Run tests
-        run: pytest --cov-MyAdventures --cov-report=xml
-
-      - name: Upload results to Codecov
-        uses: codecov/codecov-action@v5
         with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run tests and collect coverage
+        run: pytest --cov MyAdventures/
+      - name: Upload coverage to Codecov (arg token)
+        uses: codecov/codecov-action@main
+        with:
+          fail_ci_if_error: true
           token: ${{ secrets.CODECOV_TOKEN }}
-          slug: Alexxx245/TAP-Framework-Task
+          verbose: true
