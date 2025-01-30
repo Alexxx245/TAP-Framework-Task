@@ -14,17 +14,20 @@ jobs:
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v4
         with:
-          python-version: "3.13.0"
+          python-version: "3.11"
+
       - name: Install dependencies
         run: pip install pytest pytest-cov
 
       - name: Run tests
-        run: pytest --cov=MyAdventures
-        
+        run: pytest --cov=MyAdventures --cov-report=xml --maxfail=5 --timeout=60
+
+      - name: List files (debugging)
+        run: ls -la 
+
       - name: Upload results to Codecov
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          slug: Alexxx245/TAP-Framework-Task
