@@ -1,4 +1,4 @@
-name: Minecraft Framework Project
+name: Run tests and upload coverage
 
 on: 
   push
@@ -15,23 +15,15 @@ jobs:
 
       - name: Set up Python
         uses: actions/setup-python@v4
-        with:
-          python-version: "3.11"
 
       - name: Install dependencies
         run: pip install pytest pytest-cov
 
       - name: Run tests
-        run: pytest --cov=MyAdventures --cov-report=xml --capture=tee-sys -vvv -x
-
-      - name: Check coverage file
-        run: |
-          if [ ! -f coverage.xml ]; then
-            echo "coverage.xml no encontrado, revisa pytest"
-            exit 1
-          fi
+        run: pytest --cov-MyAdventures --cov-report=xml
 
       - name: Upload results to Codecov
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+          slug: Alexxx245/TAP-Framework-Task
