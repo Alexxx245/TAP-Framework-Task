@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v3
         with: 
           python-version: 3.12
 
@@ -31,9 +31,7 @@ jobs:
 
       - name: Run tests
         run: | 
-          timeout 60 pytest --cov=MyAdventures --cov-report=xml -v
-          echo "Pytest completed"
-           
+          timeout 60 pytest --cov-config=.coveragerc --cov=MyAdventures --cov-report=xml -v
 
       - name: Upload results to Codecov
         uses: codecov/codecov-action@v5
