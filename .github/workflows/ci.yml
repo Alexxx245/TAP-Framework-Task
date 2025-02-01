@@ -26,7 +26,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pytest pytest-cov
+          pip install pytest pytest-cov codecov
 
       - name: Run tests
         run: pytest --cov=MyAdventures --cov-report=xml -v
@@ -35,3 +35,4 @@ jobs:
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./coverage.xml
