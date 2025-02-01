@@ -12,7 +12,7 @@ jobs:
   test:
     name: Run tests and collect coverage
     runs-on: ubuntu-latest
-    timeout-minutes: 1
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,7 +30,10 @@ jobs:
           pip install pytest pytest-cov codecov
 
       - name: Run tests
-        run: pytest --cov=MyAdventures --cov-report=xml -v || true
+        run: | 
+          timeout 60 pytest --cov=MyAdventures --cov-report=xml -v
+          echo "Pytest completed"
+           
 
       - name: Upload results to Codecov
         uses: codecov/codecov-action@v5
