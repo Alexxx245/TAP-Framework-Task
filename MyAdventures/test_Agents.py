@@ -10,7 +10,6 @@ from Agents import *
 def mock_agent_manager():
     return AgentManager.AgentManager()
 
-
 @pytest.fixture
 def mock_mcpi():
     with patch("AgentManager.Minecraft.Minecraft.create") as mock_mc:
