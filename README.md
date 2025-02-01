@@ -14,9 +14,13 @@ This class contains a method call getMethods() which uses reflective programming
   - **CommandLineAgent**: This is the main agent that relates the AgenManager with the Minecraft chat, allowing to register, list, kill agents directly using commands on the chat of the game. This class uses the methods of the AgentManager to manage the agents that will be registered. <br/>This Agent controlls the cycle of life of the other agents by using the Minecraft chat and write different commands:
 > [!IMPORTANT]
 > To use the different commands, always enter with #agent
+
 1. register: you can do `register list` to know the available agents you can register or you can do `register -agent_type -agent_name`. Other type of message will return an error message.
+
 2. list: you can know the actual agents that you have registered doing `list`
+
 3. kill: you can do `kill -agent_name` to kill a specific agent, but the name could not be `"AgentManager"` or do `kill all` to kill all the agents that you have registered and also it show you how many agents did you kill. Otherwise it returns an error message.
+
 4. methods: you can do `methods -agent_name` to know the methods of each agent (but in this case every agent has the same methods, it's only to add reflective programming). If you don't specify a name or an real name of a registered agent it returns an error message.
 
 This agent uses functional programming on differents parts of his code because is a requirement of the task. Uses a lambda expression with a map to list the registered agents, uses a lambda expression with a filter to kill all agents except the own AgentManager, because he cannot die to keep the functionality of the program and also uses the Iterable sum method to count the number of agents that are killed.
@@ -33,6 +37,23 @@ He can also plant a yellow flower by posting `"Plant flower"`
 
   - **BuilderAgent**: this agent will build you a non-functional house but at least the structure of it, he will do it by posting on the chat `"Build house"`. You can modify the ranges and the type of the materials as you want, be free to be creational.
 
+## **HOW TO RUN IT**
+
+> [!IMPORTANT]
+> To prove the code you need to use the 1.12 version of Minecraft. You can use it installing TLauncher
+
+- First execute on the terminal the StartServer.bat file (in case you are using Windows) if not check this repo to clone the correct OS version: https://github.com/orgs/AdventuresInMinecraft/repositories <br/>
+
+- Run the Minecraft Server like this: <br/>
+`cd AdventuresInMinecraft-PC` and then `.\StartServer.bat(sh/bat/command)` <br/>
+
+- Then on Minecraft go to Multiplayer and add a server using localhost
+
+- Once you are in game you need to execute the Agents.py file
+
+- And now you can use the differents commands on the chat to prove this Agent framework, check #agent help to see the available commands
+
+  
 ## **GUIDE OF CREATING AGENTS**
 
 To create a new Agent, simply create a Class that inherits from SpecificAgent and implement the perform method which works like this: 
@@ -42,4 +63,3 @@ So be creative on creating new Agents.
 ## **TESTING**<br/>
 
 The other .py files are test of the functionality of the AgentManager and the specific Agents. This code has been tested using the pytest module and MagickMock.
-
