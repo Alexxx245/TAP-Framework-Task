@@ -11,6 +11,15 @@ My implementation of this task it is distributed on 4 important .py files.
 This class contains a method call getMethods() which uses reflective programming by using the introspection principle.
 
 - Agents.py is a file that contains the classes of the agents that we want to create, in my case there's 5 classes (Agents). Each created Agent will implement on his way the perform method and uses the pollChatPosts() to read the chat:
+  - **TNTAgent**: this agent implements the perform method by placing and exploding X number of TNTs being X the number of TNTs we want to spawn (if you don't specify a number, only 1 TNT will spawn above you)
+He can do that because is used the `pollChatPosts()` method included on the mcpi module, and allows us to read the chat and executing the perform method when the phrase "TNT" is written.
+
+  - **InsultAgent**: this agent basically posts on the Minecraft chat random bad words, that are predefinied on a list. He will insult you if you post on the chat `"Insult me"`.
+
+  - **GardenerAgent**: this agent will plant a tree if you post on the chat "Plant tree" and he can build it by using 3 bocks of wood to build the trunk and above the last block it builds the leaves.
+He can also plant a yellow flower by posting `"Plant flower"`
+
+  - **BuilderAgent**: this agent will build you a non-functional house but at least the structure of it, he will do it by posting on the chat `"Build house"`. You can modify the ranges and the type of the materials as you want, be free to be creational.
   - **CommandLineAgent**: This is the main agent that relates the AgenManager with the Minecraft chat, allowing to register, list, kill agents directly using commands on the chat of the game. This class uses the methods of the AgentManager to manage the agents that will be registered. <br/>This Agent controlls the cycle of life of the other agents by using the Minecraft chat and write different commands:
 > [!IMPORTANT]
 > To use the different commands, always enter with #agent
@@ -26,16 +35,6 @@ This class contains a method call getMethods() which uses reflective programming
 This agent uses functional programming on differents parts of his code because is a requirement of the task. Uses a lambda expression with a map to list the registered agents, uses a lambda expression with a filter to kill all agents except the own AgentManager, because he cannot die to keep the functionality of the program and also uses the Iterable sum method to count the number of agents that are killed.
 > [!IMPORTANT]
 > Is important to know that you cannot register various agents with the same type because I decided it this way, otherwise if you want to implement it, feel free.
-
-- **TNTAgent**: this agent implements the perform method by placing and exploding X number of TNTs being X the number of TNTs we want to spawn (if you don't specify a number, only 1 TNT will spawn above you)
-He can do that because is used the `pollChatPosts()` method included on the mcpi module, and allows us to read the chat and executing the perform method when the phrase "TNT" is written.
-
-  - **InsultAgent**: this agent basically posts on the Minecraft chat random bad words, that are predefinied on a list. He will insult you if you post on the chat `"Insult me"`.
-
-  - **GardenerAgent**: this agent will plant a tree if you post on the chat "Plant tree" and he can build it by using 3 bocks of wood to build the trunk and above the last block it builds the leaves.
-He can also plant a yellow flower by posting `"Plant flower"`
-
-  - **BuilderAgent**: this agent will build you a non-functional house but at least the structure of it, he will do it by posting on the chat `"Build house"`. You can modify the ranges and the type of the materials as you want, be free to be creational.
 
 ## **HOW TO RUN IT**
 
