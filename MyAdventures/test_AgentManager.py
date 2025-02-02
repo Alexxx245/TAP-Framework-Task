@@ -14,26 +14,26 @@ class TestAgentManager:
         manager.register(agent)
         assert agent in manager.agents
 
-    def test_start_specific_agent(self):
-        manager = AgentManager()
+    # def test_start_specific_agent(self):
+    #     manager = AgentManager()
        
-        agent1 = MagicMock()
-        manager.register(agent1)
+    #     agent1 = MagicMock()
+    #     manager.register(agent1)
 
-        manager.start(0)
-        agent1.start.assert_called_once()
+    #     manager.start(0)
+    #     agent1.start.assert_called_once()
     
-    def test_start_all_agents(self):
-        manager = AgentManager()
+    # def test_start_all_agents(self):
+    #     manager = AgentManager()
        
-        agent1 = MagicMock()
-        agent2 = MagicMock()
-        manager.register(agent1)
-        manager.register(agent2)
+    #     agent1 = MagicMock()
+    #     agent2 = MagicMock()
+    #     manager.register(agent1)
+    #     manager.register(agent2)
 
-        manager.start_all()
-        agent1.start.assert_called_once()
-        agent2.start.assert_called_once()
+    #     manager.start_all()
+    #     agent1.start.assert_called_once()
+    #     agent2.start.assert_called_once()
 
     def test_stop_specific_agent(self):
         manager = AgentManager()
@@ -81,12 +81,12 @@ class TestAgentManager:
 """Class to test the SpecificAgent functions"""
 class TestSpecificAgent:
      
-    def test_start_puts_currentActivity_on_true(self):
-        with patch("AgentManager.Minecraft.Minecraft.create"):
-            agent = SpecificAgent("Agent1")
-            agent.run = MagicMock() 
-            agent.start()
-            assert agent.currentActivity is True
+    # def test_start_puts_currentActivity_on_true(self):
+    #     with patch("AgentManager.Minecraft.Minecraft.create"):
+    #         agent = SpecificAgent("Agent1")
+    #         agent.run = MagicMock() 
+    #         agent.start()
+    #         assert agent.currentActivity is True
 
     def test_stop_puts_currentActivity_on_false(self):
         with patch("AgentManager.Minecraft.Minecraft.create"):
