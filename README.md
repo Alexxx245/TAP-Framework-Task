@@ -1,5 +1,3 @@
-[![codecov](https://codecov.io/gh/Alexxx245/TAP-Framework-Task/graph/badge.svg?token=1WJWHS6F02)](https://codecov.io/gh/Alexxx245/TAP-Framework-Task)
-
 ## **DESCRIPTION OF THE PROJECT**
 
 This project has the goal of implement a framework that executes code using Inversion Of Control on Minecraft.
