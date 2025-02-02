@@ -31,10 +31,8 @@ jobs:
 
       - name: Run tests
         run: | 
-          timeout 60 pytest --cov-config=.coveragerc --cov=MyAdventures --cov-report=xml -v -s
-
-      - name: Debug processes
-        run: ps aux
+          timeout 60 pytest --cov-config=.coveragerc --cov=MyAdventures --cov-report=xml -v
+          ps aux
 
       - name: Upload results to Codecov
         uses: codecov/codecov-action@v5
