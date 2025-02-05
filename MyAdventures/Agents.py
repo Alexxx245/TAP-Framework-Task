@@ -7,7 +7,7 @@ import random
 class CommandLineAgent(AgentManager.SpecificAgent):
 
     def __init__(self, name, manager, list_agents):
-        super().__init__(name)
+        super().__init__(name,)
         self.manager = manager
         self.agent_list = list_agents
 
@@ -58,8 +58,13 @@ class CommandLineAgent(AgentManager.SpecificAgent):
                                 #I applied functional programming to kill all agents except the Manager Agent using filter
                                 #and then using sum to get the amunt of agents killed to post after on the Minecraft chat
                                 agents_to_kill = list(filter(lambda agent: agent.name != self.name, self.manager.agents))
-                                killed_count = sum(1 for agent in agents_to_kill if self.manager.kill(self.manager.agents.index(agent)))
-                                self.postToChat("You have killed " + str(killed_count) + " agent")
+
+                                killed_count = 0
+                                for agent in agents_to_kill:
+                                    if agent:
+                                        self.manager.kill(self.manager.agents.index(agent))
+                                        killed_count += 1
+                                self.postToChat("You have killed " + str(killed_count) + " agent(s)")
                             else:
                                 agent = next((a for a in self.manager.agents if a.name == w[2]), None)
                                 if agent:

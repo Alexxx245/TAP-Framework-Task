@@ -1,70 +1,366 @@
-[10:16:48] [Server thread/INFO]: Loading properties
-[10:16:48] [Server thread/INFO]: Default game type: CREATIVE
-[10:16:48] [Server thread/INFO]: Generating keypair
-[10:16:48] [Server thread/INFO]: Starting Minecraft server on *:25565
-[10:16:48] [Server thread/INFO]: Using default channel type
-[10:16:48] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-ed8c725 (MC: 1.12) (Implementing API version 1.12-R0.1-SNAPSHOT)
-[10:16:49] [Server thread/INFO]: [RaspberryJuice] Loading RaspberryJuice v1.10
-[10:16:49] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[10:16:49] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[10:16:49] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[10:16:49] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[10:16:49] [Server thread/INFO]: Preparing level "world"
-[10:16:49] [Server thread/INFO]: Preparing start region for level 0 (Seed: -8879930451117232125)
-[10:16:50] [Server thread/INFO]: Preparing spawn area: 47%
-[10:16:50] [Server thread/INFO]: Preparing start region for level 1 (Seed: -8879930451117232125)
-[10:16:51] [Server thread/INFO]: Preparing spawn area: 70%
-[10:16:52] [Server thread/INFO]: Preparing start region for level 2 (Seed: -8879930451117232125)
-[10:16:52] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.10
-[10:16:52] [Server thread/INFO]: [RaspberryJuice] Using port 4711
-[10:16:52] [Server thread/INFO]: [RaspberryJuice] Using ABSOLUTE locations
-[10:16:52] [Server thread/INFO]: [RaspberryJuice] Using BOTH clicks for hits
-[10:16:52] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
-[10:16:52] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[10:16:52] [Server thread/INFO]: Done (3,459s)! For help, type "help" or "?"
-[10:17:00] [Server thread/INFO]: alexx[/127.0.0.1:64208] logged in with entity id 18 at ([world]2.7431829602098383, 64.0, -85.27398453247379)
-[10:17:28] [Thread-7/INFO]: [RaspberryJuice] Starting input thread
-[10:17:28] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:64209.
-[10:17:28] [Thread-8/INFO]: [RaspberryJuice] Starting output thread!
-[10:17:45] [Thread-7/INFO]: [RaspberryJuice] Connection reset
-[10:17:45] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:64209.
-[10:17:55] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:64211.
-[10:17:55] [Thread-10/INFO]: [RaspberryJuice] Starting output thread!
-[10:17:55] [Thread-9/INFO]: [RaspberryJuice] Starting input thread
-[10:18:21] [Netty Server IO #2/INFO]: <alexx> #agent list[m
-[10:18:21] [Server thread/INFO]: AgentManager :You have 1 agents:[m
-[10:18:21] [Server thread/INFO]: AgentManager :Agent: AgentManager [CommandLineAgent][m
-[10:18:33] [Netty Server IO #2/INFO]: <alexx> #agent kill pepe[m
-[10:18:33] [Server thread/INFO]: AgentManager :Agent: pepe not found[m
-[10:18:40] [Netty Server IO #2/INFO]: <alexx> #agent kill AgentManager[m
-[10:18:40] [Server thread/INFO]: AgentManager :ERROR! You can't kill the Manager Agent[m
-[10:19:21] [Server thread/INFO]: alexx lost connection: Disconnected
-[10:19:21] [Server thread/INFO]: alexx left the game
-[10:24:24] [Server thread/INFO]: alexx[/127.0.0.1:64270] logged in with entity id 22 at ([world]1.6260640781109752, 64.0, -83.43005351448686)
-[10:24:32] [Netty Server IO #5/INFO]: <alexx> #agent register list[m
-[10:24:32] [Server thread/INFO]: AgentManager :List of possible agent classes:[m
-[10:24:32] [Server thread/INFO]: AgentManager :Agent: TNTAgent[m
-[10:24:32] [Server thread/INFO]: AgentManager :Agent: InsultAgent[m
-[10:24:32] [Server thread/INFO]: AgentManager :Agent: GardenerAgent[m
-[10:24:32] [Server thread/INFO]: AgentManager :Agent: BuilderAgent[m
-[10:26:10] [Netty Server IO #5/INFO]: <alexx> #agent help[m
-[10:26:10] [Server thread/INFO]: AgentManager :Manager commands: Use #agent before any command[m
-[10:26:10] [Server thread/INFO]: AgentManager : -> register -agent_type -agent_name: registers and activates a new agent from a set list[m
-[10:26:10] [Server thread/INFO]: AgentManager : -> register list: returns the list of possible agents[m
-[10:26:10] [Server thread/INFO]: AgentManager : -> list: returns the list of current activate agents registered[m
-[10:26:10] [Server thread/INFO]: AgentManager : -> kill: stops an active agent and remove it from the list[m
-[10:26:10] [Server thread/INFO]: AgentManager : -> kill all: stops and removes all active agents from the list[m
-[10:26:10] [Server thread/INFO]: AgentManager : -> methods -agent_name: returns the methods of the agent[m
-[10:26:54] [Server thread/INFO]: alexx lost connection: Disconnected
-[10:26:54] [Server thread/INFO]: alexx left the game
-[10:27:08] [Thread-9/INFO]: [RaspberryJuice] Connection reset
-[10:27:08] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:64211.
-[10:27:11] [Server thread/INFO]: Stopping the server
-[10:27:11] [Server thread/INFO]: Stopping server
-[10:27:11] [Server thread/INFO]: [RaspberryJuice] Disabling RaspberryJuice v1.10
-[10:27:11] [Server thread/INFO]: [RaspberryJuice] Raspberry Juice Stopped
-[10:27:11] [Server thread/INFO]: Saving players
-[10:27:11] [Server thread/INFO]: Saving worlds
-[10:27:11] [Server thread/INFO]: Saving chunks for level 'world'/overworld
-[10:27:11] [Server thread/INFO]: Saving chunks for level 'world_nether'/the_nether
-[10:27:11] [Server thread/INFO]: Saving chunks for level 'world_the_end'/the_end
+[18:51:43] [Server thread/INFO]: Loading properties
+[18:51:43] [Server thread/INFO]: Default game type: CREATIVE
+[18:51:43] [Server thread/INFO]: Generating keypair
+[18:51:43] [Server thread/INFO]: Starting Minecraft server on *:25565
+[18:51:43] [Server thread/INFO]: Using default channel type
+[18:51:44] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-ed8c725 (MC: 1.12) (Implementing API version 1.12-R0.1-SNAPSHOT)
+[18:51:44] [Server thread/INFO]: [RaspberryJuice] Loading RaspberryJuice v1.10
+[18:51:44] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[18:51:44] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[18:51:44] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[18:51:44] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[18:51:44] [Server thread/INFO]: Preparing level "world"
+[18:51:44] [Server thread/INFO]: Preparing start region for level 0 (Seed: -8879930451117232125)
+[18:51:45] [Server thread/INFO]: Preparing spawn area: 47%
+[18:51:46] [Server thread/INFO]: Preparing start region for level 1 (Seed: -8879930451117232125)
+[18:51:47] [Server thread/INFO]: Preparing spawn area: 71%
+[18:51:47] [Server thread/INFO]: Preparing start region for level 2 (Seed: -8879930451117232125)
+[18:51:47] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.10
+[18:51:47] [Server thread/INFO]: [RaspberryJuice] Using port 4711
+[18:51:47] [Server thread/INFO]: [RaspberryJuice] Using ABSOLUTE locations
+[18:51:47] [Server thread/INFO]: [RaspberryJuice] Using BOTH clicks for hits
+[18:51:47] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
+[18:51:47] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:51:47] [Server thread/INFO]: Done (3,439s)! For help, type "help" or "?"
+[18:51:52] [Server thread/INFO]: alexx[/127.0.0.1:63501] logged in with entity id 18 at ([world]1.6260640781109752, 64.0, -83.43005351448686)
+[18:51:59] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63502.
+[18:51:59] [Thread-8/INFO]: [RaspberryJuice] Starting output thread!
+[18:51:59] [Thread-7/INFO]: [RaspberryJuice] Starting input thread
+[18:52:12] [Netty Server IO #2/INFO]: <alexx> #agent list[m
+[18:52:12] [Server thread/INFO]: AgentManager :You have 1 agents:[m
+[18:52:12] [Server thread/INFO]: AgentManager :Agent: AgentManager [CommandLineAgent][m
+[18:52:19] [Netty Server IO #2/INFO]: <alexx> #agent register list[m
+[18:52:19] [Server thread/INFO]: AgentManager :List of possible agent classes:[m
+[18:52:19] [Server thread/INFO]: AgentManager :Agent: TNTAgent[m
+[18:52:19] [Server thread/INFO]: AgentManager :Agent: InsultAgent[m
+[18:52:19] [Server thread/INFO]: AgentManager :Agent: GardenerAgent[m
+[18:52:19] [Server thread/INFO]: AgentManager :Agent: BuilderAgent[m
+[18:52:29] [Netty Server IO #2/INFO]: <alexx> #agent register list pepe[m
+[18:52:34] [Netty Server IO #2/INFO]: <alexx> #agent register list pepe pepe[m
+[18:52:34] [Server thread/INFO]: AgentManager :ERROR! You have to indicate: #agent register -agent_type -agent_name[m
+[18:52:45] [Netty Server IO #2/INFO]: <alexx> #agent register TNTAgent tnt[m
+[18:52:45] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63504.
+[18:52:45] [Thread-9/INFO]: [RaspberryJuice] Starting input thread
+[18:52:45] [Thread-10/INFO]: [RaspberryJuice] Starting output thread!
+[18:52:45] [Server thread/INFO]: AgentManager :You have registered TNTAgent: tnt[m
+[18:52:50] [Netty Server IO #2/INFO]: <alexx> #agent list[m
+[18:52:50] [Server thread/INFO]: AgentManager :You have 2 agents:[m
+[18:52:50] [Server thread/INFO]: AgentManager :Agent: AgentManager [CommandLineAgent][m
+[18:52:50] [Server thread/INFO]: AgentManager :Agent: tnt [TNTAgent][m
+[18:53:01] [Netty Server IO #2/INFO]: <alexx> #agent register PepeAgent pepe[m
+[18:53:09] [Netty Server IO #2/INFO]: <alexx> #agent list[m
+[18:53:09] [Server thread/INFO]: AgentManager :You have 2 agents:[m
+[18:53:09] [Server thread/INFO]: AgentManager :Agent: AgentManager [CommandLineAgent][m
+[18:53:09] [Server thread/INFO]: AgentManager :Agent: tnt [TNTAgent][m
+[18:53:39] [Netty Server IO #2/INFO]: <alexx> #agent kill[m
+[18:53:39] [Server thread/INFO]: AgentManager :ERROR! You have to indicate: #agent kill -agent_name[m
+[18:53:43] [Netty Server IO #2/INFO]: <alexx> #agent kill pepe[m
+[18:53:43] [Server thread/INFO]: AgentManager :Agent: pepe not found[m
+[18:53:48] [Netty Server IO #2/INFO]: <alexx> #agent list[m
+[18:53:48] [Server thread/INFO]: AgentManager :You have 2 agents:[m
+[18:53:48] [Server thread/INFO]: AgentManager :Agent: AgentManager [CommandLineAgent][m
+[18:53:48] [Server thread/INFO]: AgentManager :Agent: tnt [TNTAgent][m
+[18:53:57] [Netty Server IO #2/INFO]: <alexx> #agent kill tnt[m
+[18:53:57] [Server thread/INFO]: AgentManager :You have killed tnt agent[m
+[18:53:57] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63504.
+[18:54:01] [Netty Server IO #2/INFO]: <alexx> #agent list[m
+[18:54:01] [Server thread/INFO]: AgentManager :You have 1 agents:[m
+[18:54:01] [Server thread/INFO]: AgentManager :Agent: AgentManager [CommandLineAgent][m
+[18:54:09] [Netty Server IO #2/INFO]: <alexx> #agent register PepeAgent pepe[m
+[18:54:14] [Netty Server IO #2/INFO]: <alexx> #agent register TNTAgent tnt[m
+[18:54:14] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63515.
+[18:54:14] [Thread-12/INFO]: [RaspberryJuice] Starting output thread!
+[18:54:14] [Thread-11/INFO]: [RaspberryJuice] Starting input thread
+[18:54:14] [Server thread/INFO]: AgentManager :You have registered TNTAgent: tnt[m
+[18:54:16] [Netty Server IO #2/INFO]: <alexx> #agent register TNTAgent tnt[m
+[18:54:16] [Server thread/INFO]: AgentManager :ERROR! This type of agent is already registered[m
+[18:54:21] [Netty Server IO #2/INFO]: <alexx> #agent list[m
+[18:54:21] [Server thread/INFO]: AgentManager :You have 2 agents:[m
+[18:54:21] [Server thread/INFO]: AgentManager :Agent: AgentManager [CommandLineAgent][m
+[18:54:21] [Server thread/INFO]: AgentManager :Agent: tnt [TNTAgent][m
+[18:54:32] [Netty Server IO #2/INFO]: <alexx> #agent register BuilderAgent builder[m
+[18:54:32] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63517.
+[18:54:32] [Thread-13/INFO]: [RaspberryJuice] Starting input thread
+[18:54:32] [Thread-14/INFO]: [RaspberryJuice] Starting output thread!
+[18:54:32] [Server thread/INFO]: AgentManager :You have registered BuilderAgent: builder[m
+[18:54:35] [Netty Server IO #2/INFO]: <alexx> #agent list[m
+[18:54:35] [Server thread/INFO]: AgentManager :You have 3 agents:[m
+[18:54:35] [Server thread/INFO]: AgentManager :Agent: AgentManager [CommandLineAgent][m
+[18:54:35] [Server thread/INFO]: AgentManager :Agent: tnt [TNTAgent][m
+[18:54:35] [Server thread/INFO]: AgentManager :Agent: builder [BuilderAgent][m
+[18:54:44] [Netty Server IO #2/INFO]: <alexx> #agent kill all[m
+[18:54:45] [Server thread/INFO]: AgentManager :You have killed 0 agent[m
+[18:54:45] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63515.
+[18:54:45] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63517.
+[18:54:56] [Netty Server IO #2/INFO]: <alexx> #agent list[m
+[18:54:56] [Server thread/INFO]: AgentManager :You have 1 agents:[m
+[18:54:56] [Server thread/INFO]: AgentManager :Agent: AgentManager [CommandLineAgent][m
+[18:55:49] [Netty Server IO #2/INFO]: <alexx> #agent register BuilderAgent builder[m
+[18:55:49] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63530.
+[18:55:49] [Thread-15/INFO]: [RaspberryJuice] Starting input thread
+[18:55:49] [Thread-16/INFO]: [RaspberryJuice] Starting output thread!
+[18:55:49] [Server thread/INFO]: AgentManager :You have registered BuilderAgent: builder[m
+[18:55:50] [Netty Server IO #2/INFO]: <alexx> #agent list[m
+[18:55:50] [Server thread/INFO]: AgentManager :You have 2 agents:[m
+[18:55:50] [Server thread/INFO]: AgentManager :Agent: AgentManager [CommandLineAgent][m
+[18:55:50] [Server thread/INFO]: AgentManager :Agent: builder [BuilderAgent][m
+[18:56:36] [Netty Server IO #2/INFO]: <alexx> #agent kill builder[m
+[18:56:36] [Server thread/INFO]: AgentManager :You have killed builder agent[m
+[18:56:36] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63530.
+[18:56:41] [Netty Server IO #2/INFO]: <alexx> #agent register BuilderAgent builder[m
+[18:56:41] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63531.
+[18:56:41] [Thread-17/INFO]: [RaspberryJuice] Starting input thread
+[18:56:41] [Thread-18/INFO]: [RaspberryJuice] Starting output thread!
+[18:56:41] [Server thread/INFO]: AgentManager :You have registered BuilderAgent: builder[m
+[18:56:47] [Netty Server IO #2/INFO]: <alexx> #agent register TNTAgent tnt[m
+[18:56:47] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63532.
+[18:56:47] [Thread-19/INFO]: [RaspberryJuice] Starting input thread
+[18:56:47] [Thread-20/INFO]: [RaspberryJuice] Starting output thread!
+[18:56:47] [Server thread/INFO]: AgentManager :You have registered TNTAgent: tnt[m
+[18:56:55] [Netty Server IO #2/INFO]: <alexx> #agent kill all[m
+[18:56:55] [Server thread/INFO]: AgentManager :You have killed 0 agent[m
+[18:56:55] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63531.
+[18:56:55] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63532.
+[18:59:05] [Netty Server IO #2/INFO]: <alexx> #agent kill AgentManager[m
+[18:59:05] [Server thread/INFO]: AgentManager :ERROR! You can't kill the Manager Agent[m
+[18:59:11] [Netty Server IO #2/INFO]: <alexx> #agent list[m
+[18:59:11] [Server thread/INFO]: AgentManager :You have 1 agents:[m
+[18:59:11] [Server thread/INFO]: AgentManager :Agent: AgentManager [CommandLineAgent][m
+[18:59:33] [Netty Server IO #2/INFO]: <alexx> #agent methods[m
+[18:59:33] [Server thread/INFO]: AgentManager :ERROR! You have to indicate: #agent methods -agent_name[m
+[18:59:38] [Netty Server IO #2/INFO]: <alexx> #agent methods pepe[m
+[18:59:38] [Server thread/INFO]: AgentManager :Agent: pepe not found[m
+[18:59:44] [Netty Server IO #2/INFO]: <alexx> #agent register TNTAgent tnt[m
+[18:59:44] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63569.
+[18:59:44] [Thread-21/INFO]: [RaspberryJuice] Starting input thread
+[18:59:44] [Thread-22/INFO]: [RaspberryJuice] Starting output thread!
+[18:59:44] [Server thread/INFO]: AgentManager :You have registered TNTAgent: tnt[m
+[18:59:50] [Netty Server IO #2/INFO]: <alexx> #agent methods tnt[m
+[18:59:50] [Server thread/INFO]: AgentManager :Methods of tnt: getMethods,perform,postToChat,run,start,stop[m
+[19:00:02] [Netty Server IO #2/INFO]: <alexx> #agent register BuilderAgent builder[m
+[19:00:02] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63570.
+[19:00:02] [Thread-23/INFO]: [RaspberryJuice] Starting input thread
+[19:00:02] [Thread-24/INFO]: [RaspberryJuice] Starting output thread!
+[19:00:02] [Server thread/INFO]: AgentManager :You have registered BuilderAgent: builder[m
+[19:00:07] [Netty Server IO #2/INFO]: <alexx> #agent methods builder[m
+[19:00:07] [Server thread/INFO]: AgentManager :Methods of builder: getMethods,perform,postToChat,run,start,stop[m
+[19:00:17] [Netty Server IO #2/INFO]: <alexx> #agent help[m
+[19:00:18] [Server thread/INFO]: AgentManager :Manager commands: Use #agent before any command[m
+[19:00:18] [Server thread/INFO]: AgentManager : -> register -agent_type -agent_name: registers and activates a new agent from a set list[m
+[19:00:18] [Server thread/INFO]: AgentManager : -> register list: returns the list of possible agents[m
+[19:00:18] [Server thread/INFO]: AgentManager : -> list: returns the list of current activate agents registered[m
+[19:00:18] [Server thread/INFO]: AgentManager : -> kill: stops an active agent and remove it from the list[m
+[19:00:18] [Server thread/INFO]: AgentManager : -> kill all: stops and removes all active agents from the list[m
+[19:00:18] [Server thread/INFO]: AgentManager : -> methods -agent_name: returns the methods of the agent[m
+[19:02:08] [Thread-7/INFO]: [RaspberryJuice] Connection reset
+[19:02:08] [Thread-21/INFO]: [RaspberryJuice] Connection reset
+[19:02:08] [Thread-23/INFO]: [RaspberryJuice] Connection reset
+[19:02:08] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63502.
+[19:02:08] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63569.
+[19:02:08] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63570.
+[19:02:30] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63580.
+[19:02:30] [Thread-25/INFO]: [RaspberryJuice] Starting input thread
+[19:02:30] [Thread-26/INFO]: [RaspberryJuice] Starting output thread!
+[19:02:35] [Netty Server IO #2/INFO]: <alexx> #agent register BuilderAgent builder[m
+[19:02:35] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63586.
+[19:02:35] [Thread-27/INFO]: [RaspberryJuice] Starting input thread
+[19:02:35] [Thread-28/INFO]: [RaspberryJuice] Starting output thread!
+[19:02:35] [Server thread/INFO]: AgentManager :You have registered BuilderAgent: builder[m
+[19:02:42] [Netty Server IO #2/INFO]: <alexx> #agent kill builder[m
+[19:02:42] [Server thread/INFO]: AgentManager :You have killed builder agent[m
+[19:02:42] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63586.
+[19:02:46] [Netty Server IO #2/INFO]: <alexx> #agent register BuilderAgent builder[m
+[19:02:46] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63587.
+[19:02:46] [Thread-29/INFO]: [RaspberryJuice] Starting input thread
+[19:02:46] [Thread-30/INFO]: [RaspberryJuice] Starting output thread!
+[19:02:46] [Server thread/INFO]: AgentManager :You have registered BuilderAgent: builder[m
+[19:02:55] [Netty Server IO #2/INFO]: <alexx> #agent register InsultAgent insulter[m
+[19:02:55] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63588.
+[19:02:55] [Thread-31/INFO]: [RaspberryJuice] Starting input thread
+[19:02:55] [Thread-32/INFO]: [RaspberryJuice] Starting output thread!
+[19:02:55] [Server thread/INFO]: AgentManager :You have registered InsultAgent: insulter[m
+[19:03:02] [Netty Server IO #2/INFO]: <alexx> #agent kill all[m
+[19:03:02] [Server thread/INFO]: AgentManager :You have killed 0 agent(s)[m
+[19:03:02] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63587.
+[19:03:02] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63588.
+[19:03:07] [Thread-25/INFO]: [RaspberryJuice] Connection reset
+[19:03:07] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63580.
+[19:07:03] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63634.
+[19:07:03] [Thread-34/INFO]: [RaspberryJuice] Starting output thread!
+[19:07:03] [Thread-33/INFO]: [RaspberryJuice] Starting input thread
+[19:07:07] [Netty Server IO #2/INFO]: <alexx> #agent register InsultAgent insulter[m
+[19:07:07] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63640.
+[19:07:07] [Thread-35/INFO]: [RaspberryJuice] Starting input thread
+[19:07:07] [Thread-36/INFO]: [RaspberryJuice] Starting output thread!
+[19:07:07] [Server thread/INFO]: AgentManager :You have registered InsultAgent: insulter[m
+[19:07:09] [Netty Server IO #2/INFO]: <alexx> #agent register BuilderAgent builder[m
+[19:07:09] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63643.
+[19:07:09] [Thread-38/INFO]: [RaspberryJuice] Starting output thread!
+[19:07:09] [Thread-37/INFO]: [RaspberryJuice] Starting input thread
+[19:07:10] [Server thread/INFO]: AgentManager :You have registered BuilderAgent: builder[m
+[19:07:12] [Netty Server IO #2/INFO]: <alexx> #agent kill all[m
+[19:07:12] [Server thread/INFO]: AgentManager :You have killed 0 agent(s)[m
+[19:07:12] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63640.
+[19:07:12] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63643.
+[19:07:19] [Thread-33/INFO]: [RaspberryJuice] Connection reset
+[19:07:19] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63634.
+[19:08:01] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63654.
+[19:08:01] [Thread-39/INFO]: [RaspberryJuice] Starting input thread
+[19:08:01] [Thread-40/INFO]: [RaspberryJuice] Starting output thread!
+[19:08:04] [Netty Server IO #2/INFO]: <alexx> #agent register InsultAgent insulter[m
+[19:08:04] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63661.
+[19:08:04] [Thread-42/INFO]: [RaspberryJuice] Starting output thread!
+[19:08:04] [Thread-41/INFO]: [RaspberryJuice] Starting input thread
+[19:08:04] [Server thread/INFO]: AgentManager :You have registered InsultAgent: insulter[m
+[19:08:07] [Netty Server IO #2/INFO]: <alexx> #agent register BuilderAgent builder[m
+[19:08:07] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63662.
+[19:08:07] [Thread-43/INFO]: [RaspberryJuice] Starting input thread
+[19:08:07] [Thread-44/INFO]: [RaspberryJuice] Starting output thread!
+[19:08:07] [Server thread/INFO]: AgentManager :You have registered BuilderAgent: builder[m
+[19:08:09] [Netty Server IO #2/INFO]: <alexx> #agent kill all[m
+[19:08:09] [Server thread/INFO]: AgentManager :You have killed <generator object CommandLineAgent.perform.<locals>.<genexpr> at 0x0000016A5C7AC220> agent(s)[m
+[19:08:18] [Thread-41/INFO]: [RaspberryJuice] Connection reset
+[19:08:18] [Thread-43/INFO]: [RaspberryJuice] Connection reset
+[19:08:18] [Thread-39/INFO]: [RaspberryJuice] Connection reset
+[19:08:18] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63654.
+[19:08:18] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63661.
+[19:08:18] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63662.
+[19:12:11] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63719.
+[19:12:11] [Thread-45/INFO]: [RaspberryJuice] Starting input thread
+[19:12:11] [Thread-46/INFO]: [RaspberryJuice] Starting output thread!
+[19:12:16] [Netty Server IO #2/INFO]: <alexx> #agent register InsultAgent insulter[m
+[19:12:16] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63721.
+[19:12:16] [Thread-47/INFO]: [RaspberryJuice] Starting input thread
+[19:12:16] [Thread-48/INFO]: [RaspberryJuice] Starting output thread!
+[19:12:16] [Server thread/INFO]: AgentManager :You have registered InsultAgent: insulter[m
+[19:12:19] [Netty Server IO #2/INFO]: <alexx> #agent register BuilderAgent builder[m
+[19:12:19] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63722.
+[19:12:19] [Thread-49/INFO]: [RaspberryJuice] Starting input thread
+[19:12:19] [Thread-50/INFO]: [RaspberryJuice] Starting output thread!
+[19:12:19] [Server thread/INFO]: AgentManager :You have registered BuilderAgent: builder[m
+[19:12:21] [Netty Server IO #2/INFO]: <alexx> #agent kill all[m
+[19:12:50] [Thread-49/INFO]: [RaspberryJuice] Connection reset
+[19:12:50] [Thread-45/INFO]: [RaspberryJuice] Connection reset
+[19:12:50] [Thread-47/INFO]: [RaspberryJuice] Connection reset
+[19:12:50] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63719.
+[19:12:50] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63721.
+[19:12:50] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63722.
+[19:12:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63739.
+[19:12:52] [Thread-52/INFO]: [RaspberryJuice] Starting output thread!
+[19:12:52] [Thread-51/INFO]: [RaspberryJuice] Starting input thread
+[19:12:54] [Netty Server IO #2/INFO]: <alexx> #agent register InsultAgent insulter[m
+[19:12:54] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63741.
+[19:12:54] [Thread-53/INFO]: [RaspberryJuice] Starting input thread
+[19:12:54] [Thread-54/INFO]: [RaspberryJuice] Starting output thread!
+[19:12:54] [Server thread/INFO]: AgentManager :You have registered InsultAgent: insulter[m
+[19:12:56] [Netty Server IO #2/INFO]: <alexx> #agent register BuilderAgent builder[m
+[19:12:56] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63742.
+[19:12:56] [Thread-56/INFO]: [RaspberryJuice] Starting output thread!
+[19:12:56] [Thread-55/INFO]: [RaspberryJuice] Starting input thread
+[19:12:56] [Server thread/INFO]: AgentManager :You have registered BuilderAgent: builder[m
+[19:12:59] [Netty Server IO #2/INFO]: <alexx> #agent kill all[m
+[19:12:59] [Server thread/INFO]: AgentManager :You have killed 0 agent(s)[m
+[19:12:59] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63741.
+[19:12:59] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63742.
+[19:13:30] [Thread-51/INFO]: [RaspberryJuice] Connection reset
+[19:13:30] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63739.
+[19:13:32] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63751.
+[19:13:32] [Thread-58/INFO]: [RaspberryJuice] Starting output thread!
+[19:13:32] [Thread-57/INFO]: [RaspberryJuice] Starting input thread
+[19:13:35] [Netty Server IO #2/INFO]: <alexx> #agent register InsultAgent insulter[m
+[19:13:35] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63757.
+[19:13:35] [Thread-59/INFO]: [RaspberryJuice] Starting input thread
+[19:13:35] [Thread-60/INFO]: [RaspberryJuice] Starting output thread!
+[19:13:35] [Server thread/INFO]: AgentManager :You have registered InsultAgent: insulter[m
+[19:13:37] [Netty Server IO #2/INFO]: <alexx> #agent register BuilderAgent builder[m
+[19:13:37] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63759.
+[19:13:37] [Thread-61/INFO]: [RaspberryJuice] Starting input thread
+[19:13:37] [Thread-62/INFO]: [RaspberryJuice] Starting output thread!
+[19:13:37] [Server thread/INFO]: AgentManager :You have registered BuilderAgent: builder[m
+[19:13:40] [Netty Server IO #2/INFO]: <alexx> #agent kill all[m
+[19:13:40] [Server thread/INFO]: AgentManager :You have killed 0 agent(s)[m
+[19:13:40] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63757.
+[19:13:40] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63759.
+[19:13:45] [Thread-57/INFO]: [RaspberryJuice] Connection reset
+[19:13:45] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63751.
+[19:16:48] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63785.
+[19:16:48] [Thread-64/INFO]: [RaspberryJuice] Starting output thread!
+[19:16:48] [Thread-63/INFO]: [RaspberryJuice] Starting input thread
+[19:16:52] [Netty Server IO #2/INFO]: <alexx> #agent register InsultAgent insulter[m
+[19:16:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63792.
+[19:16:52] [Thread-65/INFO]: [RaspberryJuice] Starting input thread
+[19:16:52] [Thread-66/INFO]: [RaspberryJuice] Starting output thread!
+[19:16:52] [Server thread/INFO]: AgentManager :You have registered InsultAgent: insulter[m
+[19:16:53] [Netty Server IO #2/INFO]: <alexx> #agent register BuilderAgent builder[m
+[19:16:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63793.
+[19:16:53] [Thread-67/INFO]: [RaspberryJuice] Starting input thread
+[19:16:53] [Thread-68/INFO]: [RaspberryJuice] Starting output thread!
+[19:16:54] [Server thread/INFO]: AgentManager :You have registered BuilderAgent: builder[m
+[19:16:55] [Netty Server IO #2/INFO]: <alexx> #agent kill all[m
+[19:16:55] [Server thread/INFO]: AgentManager :You have killed 1 agent(s)[m
+[19:16:55] [Server thread/INFO]: AgentManager :You have killed 2 agent(s)[m
+[19:16:55] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63792.
+[19:16:55] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63793.
+[19:17:06] [Thread-63/INFO]: [RaspberryJuice] Connection reset
+[19:17:06] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63785.
+[19:17:30] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63804.
+[19:17:30] [Thread-69/INFO]: [RaspberryJuice] Starting input thread
+[19:17:30] [Thread-70/INFO]: [RaspberryJuice] Starting output thread!
+[19:17:33] [Netty Server IO #2/INFO]: <alexx> #agent register InsultAgent insulter[m
+[19:17:33] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63810.
+[19:17:33] [Thread-71/INFO]: [RaspberryJuice] Starting input thread
+[19:17:33] [Thread-72/INFO]: [RaspberryJuice] Starting output thread!
+[19:17:33] [Server thread/INFO]: AgentManager :You have registered InsultAgent: insulter[m
+[19:17:34] [Netty Server IO #2/INFO]: <alexx> #agent register BuilderAgent builder[m
+[19:17:34] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63811.
+[19:17:34] [Thread-73/INFO]: [RaspberryJuice] Starting input thread
+[19:17:34] [Thread-74/INFO]: [RaspberryJuice] Starting output thread!
+[19:17:34] [Server thread/INFO]: AgentManager :You have registered BuilderAgent: builder[m
+[19:17:35] [Netty Server IO #2/INFO]: <alexx> #agent kill all[m
+[19:17:47] [Thread-71/INFO]: [RaspberryJuice] Connection reset
+[19:17:47] [Thread-69/INFO]: [RaspberryJuice] Connection reset
+[19:17:47] [Thread-73/INFO]: [RaspberryJuice] Connection reset
+[19:17:47] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63804.
+[19:17:47] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63810.
+[19:17:47] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63811.
+[19:18:28] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63837.
+[19:18:28] [Thread-76/INFO]: [RaspberryJuice] Starting output thread!
+[19:18:28] [Thread-75/INFO]: [RaspberryJuice] Starting input thread
+[19:18:31] [Netty Server IO #2/INFO]: <alexx> #agent register InsultAgent insulter[m
+[19:18:31] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63844.
+[19:18:31] [Thread-78/INFO]: [RaspberryJuice] Starting output thread!
+[19:18:31] [Thread-77/INFO]: [RaspberryJuice] Starting input thread
+[19:18:31] [Server thread/INFO]: AgentManager :You have registered InsultAgent: insulter[m
+[19:18:32] [Netty Server IO #2/INFO]: <alexx> #agent register BuilderAgent builder[m
+[19:18:32] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63845.
+[19:18:32] [Thread-79/INFO]: [RaspberryJuice] Starting input thread
+[19:18:32] [Thread-80/INFO]: [RaspberryJuice] Starting output thread!
+[19:18:32] [Server thread/INFO]: AgentManager :You have registered BuilderAgent: builder[m
+[19:18:34] [Netty Server IO #2/INFO]: <alexx> #agent kill all[m
+[19:18:40] [Thread-75/INFO]: [RaspberryJuice] Connection reset
+[19:18:40] [Thread-77/INFO]: [RaspberryJuice] Connection reset
+[19:18:40] [Thread-79/INFO]: [RaspberryJuice] Connection reset
+[19:18:40] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63837.
+[19:18:40] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63844.
+[19:18:40] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63845.
+[19:19:49] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63864.
+[19:19:49] [Thread-81/INFO]: [RaspberryJuice] Starting input thread
+[19:19:49] [Thread-82/INFO]: [RaspberryJuice] Starting output thread!
+[19:19:52] [Netty Server IO #2/INFO]: <alexx> #agent register InsultAgent insulter[m
+[19:19:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63869.
+[19:19:52] [Thread-84/INFO]: [RaspberryJuice] Starting output thread!
+[19:19:52] [Thread-83/INFO]: [RaspberryJuice] Starting input thread
+[19:19:52] [Server thread/INFO]: AgentManager :You have registered InsultAgent: insulter[m
+[19:19:56] [Netty Server IO #2/INFO]: <alexx> #agent register BuilderAgent builder[m
+[19:19:56] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63870.
+[19:19:56] [Thread-86/INFO]: [RaspberryJuice] Starting output thread!
+[19:19:56] [Thread-85/INFO]: [RaspberryJuice] Starting input thread
+[19:19:56] [Server thread/INFO]: AgentManager :You have registered BuilderAgent: builder[m
+[19:19:58] [Netty Server IO #2/INFO]: <alexx> #agent kill all[m
+[19:19:58] [Server thread/INFO]: AgentManager :You have killed 2 agent(s)[m
+[19:19:58] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63869.
+[19:19:58] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63870.
+[19:20:12] [Server thread/INFO]: alexx lost connection: Disconnected
+[19:20:12] [Server thread/INFO]: alexx left the game
+[19:20:20] [Thread-81/INFO]: [RaspberryJuice] Connection reset
+[19:20:20] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63864.
